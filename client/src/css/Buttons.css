@@ -1,0 +1,19 @@
+.button {
+    background: rgb(37, 52, 123);
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 1.2vw;
+    border-radius: 60px;
+    padding: 5px 20px;
+    border: none;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+  }
+
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

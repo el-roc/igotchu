@@ -1,0 +1,35 @@
+.profilePageContainer{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 250px;
+  width: 100vw;
+  padding: 1%;
+  text-align: center;
+  align-items: center;
+  /* padding-bottom: 2%; */
+}
+.profile_body_right a {
+  flex-basis: 100%;
+  text-align: right;
+  padding-right: 5%;
+}
+.profileButton{
+  flex-basis: 15%;
+  margin-top: 15px;
+/* margin: 9%; */
+}
+.profile_image_container {
+  flex-basis: 25%;
+}
+.filterContainer {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+}
+
+/* @media only screen and (min-width: 611px){
+  .profileButtons{
+    flex-basis: 15%;
+  }
+} */

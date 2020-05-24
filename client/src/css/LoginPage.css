@@ -1,0 +1,44 @@
+.registerPage{
+    height: 100vh;
+    width: 100vw;
+    background:rgb(37, 52, 123);
+}
+.loginContainer{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background:rgb(37, 52, 123);
+    color: white;
+}
+.loginContainer .row {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 !important;
+}
+.logContain{
+    display: flex !important;
+    flex-flow: column !important;
+    justify-content: center !important;
+    height: 100vh;
+    width: 100vw;
+}
+.row .col.offset-s2{
+    margin: 0 !important;
+}
+.loginContainer form, .loginContainer input, .btn-flat, .loginContainer p, .loginContainer label{
+ color: white !important;
+}
+.loginContainer h4{
+    font-size: 2.5vw;
+}
+.loginContainer a {
+    padding: 0 !important;
+    color: rgb(61, 121, 255);
+    font-size: 2vw;
+
+}
+
+.loginContainer p{
+    font-size: 2vw;
+}
