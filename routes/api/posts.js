@@ -14,7 +14,12 @@ var storage = multer.diskStorage({
 var upload = multer({storage: storage});
 // Posts Model
 const Posts = require('../../models/Posts')
+
+
+
 router.route('/').get((req, res) => {
+
+  console.log('aqui')
     Posts.find()
     .sort()
     .then(posts =>  res.json(posts))
@@ -22,8 +27,16 @@ router.route('/').get((req, res) => {
 })
 
 router.route('/userPosts').post((req, res) => {
+
+
+
   const sansSano = req.body.email
+
+  console.log(sansSano, "here")
   let email = sansSano.toString().replace(/"/g, "")
+
+console.log(email, 'look for me')
+
   Posts.find({email})
   .sort({})
   .then(posts => res.json(posts))
@@ -31,6 +44,20 @@ router.route('/userPosts').post((req, res) => {
 })
 
 router.post('/add', upload.single('image'), (req, res) => {
+
+console.log(req.body)
+  // _id: "User",
+  // itemName: req.body.itemId,
+  // itemPrice: req.body.price,
+  // itemStatus: req.body.status,
+  // itemDescription: req.body.itemDescription,
+  // itemCategory: req.body.category,
+  // itemMedium: req.body.medium
+  // itemLocation: req.body.location,
+  // imgPath: req.file.filename 
+  // _id,
+
+
     const _id = 'Libero'
     const email = 'zhu@gmail.com'
     const userId = 'test'
@@ -46,7 +73,6 @@ router.post('/add', upload.single('image'), (req, res) => {
     const imageData = 'test'
     console.log(req.file, req.body.itemName);
     const newPost = new Posts({
-        _id,
         userId,
         itemName,
         itemPrice,
@@ -65,10 +91,12 @@ router.post('/add', upload.single('image'), (req, res) => {
     .catch(err => res.status(400).json('Error: ' + err));
   });
 
+
   router.delete('/remove', (req, res) => {
-    Posts.findByIdAndRemove(req.params.id, (data) => {
+    Posts.findOneAndDelete({email: req.body.email, title: req.body.title}, (data) => {
         console.log(data)
     })
+    .then(() => res.json('deleted!'))
     .catch(err => res.status(400).json('Error: ' + err));
   })
 

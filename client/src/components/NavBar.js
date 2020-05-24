@@ -10,7 +10,7 @@ function NavBar(){
       <section className="navImg">
         <img className="navLogo" src={Logo} alt='' />
       </section>
-      <ul>
+      <ul className="navUL">
        
         
         <li>

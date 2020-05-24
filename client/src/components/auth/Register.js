@@ -24,7 +24,7 @@ const newUser = {
       password2: this.state.password2
     };
 console.log(newUser);
-fetch('/register', {
+fetch('/users/register', {
   method: 'POST',
   headers: {
     "Content-type": "application/json"

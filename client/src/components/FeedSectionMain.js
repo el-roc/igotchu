@@ -5,7 +5,8 @@ import React, { useState, useEffect , Component} from "react";
 // import '..css/FeedSectionMain.css';
 import ItemView from "./ItemView";
 import '../css/Newsfeed.css';
-import profileImage from '../img/profileImage.jpg';
+// import profileImage from '../img/userImage.jpg';
+import Button from './Button.js'
 
 
 class FeedSectionMain extends Component {
@@ -50,7 +51,9 @@ this.setState(()=> {
   return (
     <section className="board">
       {this.state.posts.map((item, i) => {
-        return <a href="/postedItem/:id"><ItemView className="cell" key={(i).toString()} itemName={item.itemName} imageURL={profileImage} itemPrice={item.itemPrice}/></a>;
+        return <a href="/postedItem/:id"><ItemView className="cell" key={(i).toString()} itemName={item.itemName} imageURL={"https://via.placeholder.com/200"} itemPrice={item.itemPrice}/>
+                            <Button className="profileButton" text={'- Delete Item'} on/>
+        </a>;
       })}
     </section>
   );

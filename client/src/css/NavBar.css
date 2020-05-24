@@ -19,7 +19,7 @@
 
   }
 
-  ul{
+  .navUL{
     display: flex;
     flex: 2;
     justify-content: flex-end;

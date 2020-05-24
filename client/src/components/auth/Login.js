@@ -59,7 +59,7 @@ clearTaskFromLocalStorage()
 getArrayFromLocalStorage();
 storeTaskInLocalStorage(userData.email)
 
-fetch('/login', {
+fetch('/users/login', {
   method: 'POST',
   headers: {
     "Content-type": "application/json"
@@ -67,7 +67,6 @@ fetch('/login', {
   body: JSON.stringify(userData)
 })
 .then(res => {
-  res.json()
  if(res.json()){
    window.location = "/profilepage"
  }

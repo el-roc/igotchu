@@ -1,5 +1,5 @@
 import React from 'react';
-import NewsFeedFilter from './NewsFeedFilter.js'
+import ProfileFilter from './ProfileFilter.js'
 import FeedSectionMain from './FeedSectionMain'
 import Button from './Button.js'
 import RoundProfileImage from './RoundProfileImage'
@@ -20,7 +20,7 @@ const  ProfilePage = () => {
           <Button className="profileButton" text={'+ Add Item'}/>
         </section>
         <section className='filterContainer'>
-          <NewsFeedFilter/>
+          <ProfileFilter/>
         </section>
         <section>
           <FeedSectionMain />

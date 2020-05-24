@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from "../img/igotchu-darkblue.png";
-import '../css/NavBar.css';
+// import '../css/NavBar.css';
 import '../css/NewsfeedHeader.css'
 import Button from './Button.js'
 import profileImage from '../img/profileImage.jpg';
@@ -8,11 +8,14 @@ import profileImage from '../img/profileImage.jpg';
 
  export const NewsfeedHeader = () => {
   return (
-    <div className="navBar">
-      <section className="navImg">
-        <img className="navLogo" src={Logo} alt='' />
+    <div className="nfBar">
+      <section className="nfImg">
+        <img className="nfLogo" src={Logo} alt='' />
       </section>
-      <ul>
+      <div className="pageTitle">
+        Newsfeed
+      </div>
+      <ul className="nfUL">
         <li>
           <img className="ProfileImageHeader" src={profileImage} alt="" />
         </li>

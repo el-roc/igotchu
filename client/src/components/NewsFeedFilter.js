@@ -1,6 +1,12 @@
 import React from 'react';
 import '../css/NewsFeedFilter.css';
 
+// function sendMail() {
+//  return(
+//   window.open('finessejcarter@gmail.com')
+//  )
+// }
+// window.open('mailto:test@example.com')
 function NewsFeedFilter(){
 
   const filter = (e) => {
@@ -13,7 +19,10 @@ function NewsFeedFilter(){
       <div className="mainFilter">
         <form className='FilterForm' >
         <input   onChange={(e) => filter(e)}   className="Filter" placeholder="Filter Results"></input>
-        </form>
+{/* <button onClick={sendMail} >
+  Purchase
+</button> */}
+</form>
       </div>
     );
 
