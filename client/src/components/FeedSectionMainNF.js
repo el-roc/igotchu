@@ -24,7 +24,7 @@ this.setState(()=> {
   return {email}
 })
 
-  fetch('/posts/', {
+  fetch('/api/posts/', {
     method: 'GET',
     headers: {
       "Content-type": "application/json"
