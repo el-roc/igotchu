@@ -11,8 +11,8 @@ state = {
 }
 
 componentDidMount() {
-  fetch('http://localhost:5000/api/posts/', {
-  method: 'get',
+  fetch('/posts/', {
+  method: 'Get',
   headers: {
     "Content-type": "application/json"
   },

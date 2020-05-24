@@ -18,7 +18,7 @@ function PostForm() {
 
       console.log(data);
       
-      fetch('http://localhost:5000/api/posts/add', {
+      fetch('/posts/add', {
         method: 'Post',
         headers: {
           "Content-type": "application/json"

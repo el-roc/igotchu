@@ -26,7 +26,7 @@ this.setState(()=> {
 })
 
   fetch('/api/posts/userPosts', {
-    method: 'Post',
+    method: 'POST',
     headers: {
       "Content-type": "application/json"
     },
