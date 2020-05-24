@@ -31,7 +31,7 @@ class Test extends Component {
     render () {
         return (
             <>
-<form method="POST" action="http://localhost:5000/api/posts/add"
+<form method="POST" action="/posts/add"
 enctype="multipart/form-data">
 <input type="file" name="image"/>
 <input type="text" name="itemName"/>
