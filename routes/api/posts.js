@@ -17,7 +17,7 @@ const Posts = require('../../models/Posts')
 
 
 
-router.route('/').get((req, res) => {
+router.route('/test').get((req, res) => {
 
   console.log('aqui')
     Posts.find()
