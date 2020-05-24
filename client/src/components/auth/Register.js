@@ -24,7 +24,7 @@ const newUser = {
       password2: this.state.password2
     };
 console.log(newUser);
-fetch('http://localhost:5000/api/users/register', {
+fetch('/register', {
   method: 'POST',
   headers: {
     "Content-type": "application/json"
@@ -34,7 +34,7 @@ fetch('http://localhost:5000/api/users/register', {
 .then(res => {
   res.json()
  if(res.json()){
-  window.location = "http://localhost:3000/profilepage"
+  window.location = "/profilepage"
  }})
  // http://i-got-chu-tester.herokuapp.com/
 .catch(error => alert(error.message));
