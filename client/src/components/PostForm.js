@@ -77,7 +77,7 @@ class PostForm extends Component {
         
     //   </form>
 
-<form method="POST" action="http://localhost:5000/api/posts/add"
+<form method="POST" action="/api/posts/add"
 enctype="multipart/form-data">
 <input type="file" name="image" placeholder="Image URL"/>
 <input type="text" name="itemName" placeholder="Item Name"/>

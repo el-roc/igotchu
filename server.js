@@ -1,5 +1,5 @@
 
-
+const path = require('path');
 const express = require("express");
 const cors = require('cors');
 const mongoose = require("mongoose");
@@ -11,6 +11,17 @@ const users = require("./routes/api/users")
 const posts = require('./routes/api/posts')
 
 const app = express();
+
+app.use(express.static(path.join(__dirname, 'client/build')));
+
+app.get('/express_backend', (req, res) => {
+  res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
+});
+
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname+'/client/build/index.html'));
+});
 
 app.use(cors());
 // Bodyparser middleware
