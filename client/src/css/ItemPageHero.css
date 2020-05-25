@@ -1,0 +1,95 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.itempage-hero-main{
+    height: 90vh;
+    background: rgb(37, 52, 123);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+/* ItemPageItemDescription */
+.itemDescription{
+    /* border: 2px solid black; */
+    height: 60%;
+    margin-bottom: 5%;
+    margin-top: 15%;
+    border-radius: 6px;
+    /* border: 2px solid #5e6fd3; */
+  
+    }
+/* individualItemTitle */    
+.individualItemTitle{
+        height: 10%;
+        border-radius: 6px;
+        /* border: 2px solid #5e6fd3; */
+        height: 47px;
+        padding: 5%;
+        margin-bottom: 5%;
+        margin-top: -25%;
+        font-size: 20px;
+        }
+        
+        .sellerEmail {
+          color: white;
+        }
+
+/* //itempageSellerInfo  */
+        .sellerInfoBox{
+            height: 300px;
+            border-radius: 6px;
+            border: 2px solid #5e6fd3;
+            background-color: rgb(201, 209, 215);
+            font-family: 'Montserrat', sans-serif;
+          }
+        
+          .itemPicture{
+            width: 40%;
+            height: 50%;
+            margin-top: 15%;
+          }
+
+/* itemPageContactSeller */
+.contactSeller button{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  /* box-shadow: 0 9px #999; */
+  /* margin-left: 0%; */
+  margin-top: 2%;
+  width: 80%;
+  }
+
+  /* //individualitemimage */
+  .individualItemImage{
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    margin-top: 10px;
+    padding: 2%;
+    margin-left: 25%;
+    width: 45%;
+    border: 2px solid #5e6df3;
+    border-radius: 6px;
+  }
+    
+    #priceOnImage{
+      border: 1px solid black;
+      height: 15px;
+      width: 15px;
+    }
+    

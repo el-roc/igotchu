@@ -1,0 +1,15 @@
+.roundProfileImage{
+    border: 1px solid black;
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.userProfile{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25vw;
+  font-family: 'Montserrat';
+}

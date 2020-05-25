@@ -1,0 +1,33 @@
+h4{
+  font-family: 'Montserrat';
+
+}
+
+.sr-main{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 50vw;
+  font-family: 'Montserrat';
+  color: white;
+  }
+.sr-main form{
+  width: 100%;
+}
+.sr-main input {
+  width: 100%;
+  margin-bottom: 10px;
+  font-family: 'Montserrat';
+  color: white;
+}
+.sr-main label{
+  font-size: 1vw;
+  color: white;
+  font-family: 'Montserrat';
+
+}
+.btn-sbt{
+  background: rgb(94, 111, 211);
+}
