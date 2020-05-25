@@ -1,0 +1,28 @@
+.ItemPostNF{
+    border-radius: 5%;
+    height: 250px;
+   
+    background-color: #5e6fd3;
+    margin: 10%;
+  }
+  
+  #ItemImageNF{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  
+  }
+  
+
+  #ItemTitleNF{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    height: 75px;
+  }
+  
+  #ItemTitleNF h3{
+    margin: 0;
+  }
+  

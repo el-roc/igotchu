@@ -1,0 +1,15 @@
+.postForm {
+    box-sizing: border-box;
+  }
+  form input {
+    margin: 1%;
+    font-size: 20px;
+  }
+  form input:first-of-type {
+    width: 80%;
+  }
+  textarea {
+    height: 100px;
+    width: 80%;
+  }
+  
