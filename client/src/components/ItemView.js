@@ -9,7 +9,7 @@ function ItemView(props){
       let itemName = props.itemName
       console.log(email, itemName)
 
-    fetch('http://localhost:5000/api/posts/remove', {
+    fetch('/api/posts/remove', {
     method: 'Delete',
             headers: {
           "Content-type": "application/json"

@@ -59,7 +59,7 @@ clearTaskFromLocalStorage()
 getArrayFromLocalStorage();
 storeTaskInLocalStorage(userData.email)
 
-fetch('http://localhost:5000/api/users/login', {
+fetch('/api/users/login', {
   method: 'POST',
   headers: {
     "Content-type": "application/json"
